@@ -1,9 +1,11 @@
 ---
 layout: post
-title: 实验代码（二）
-tags: codes2
-math: true
-date: 2023-06-01 15:32 +0800
+title:  实验代码（二）
+author: wb zhang
+tags:
+- jekyll theme
+- jekyll
+date: 2023-05-28 13:56 +0800
 ---
 
 # codes two
@@ -54,18 +56,18 @@ date: 2023-06-01 15:32 +0800
 ````
 
 ##  home-header.html
-  ````html
-      <div class="home-header pure-menu pure-menu-horizontal">
+    ````html
+        <div class="home-header pure-menu pure-menu-horizontal">
     <div class="home-header-bar">
-      {% if site.data.archive %}
-      <ul class="home-header-menu pure-menu-list">
+        {% if site.data.archive %}
+        <ul class="home-header-menu pure-menu-list">
         {% for item in site.data.archive %}
-          <li class="pure-menu-item">
+            <li class="pure-menu-item">
             <a href="{{ item.url | relative_url }}" class="pure-menu-link {% if page.url == item.url %}current-item{% endif %}"">{{ item.title }}</a>
-          </li>
+            </li>
         {% endfor %}
-      </ul>
-      {% endif %}
+        </ul>
+        {% endif %}
     </div>
-  </div>
-  ````
+    </div>
+    ````
